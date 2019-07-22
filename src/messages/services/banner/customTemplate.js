@@ -24,7 +24,9 @@ function fetcher(url) {
 
 function getCustomTemplate(styles) {
     const source = styles.markup;
-    if (__MESSAGES__.__DEMO__) {
+    console.log(source);
+    if (true) {
+        console.log('hi');
         return ZalgoPromise.resolve(
             stringStartsWith(source, 'http') || stringStartsWith(source, './') ? fetcher(source) : source
         );

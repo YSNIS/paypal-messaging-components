@@ -13,6 +13,7 @@ import { globalState, setGlobalState } from '../../utils/globalState';
  * @returns {void}
  */
 export default function render(options, selector = '[data-pp-message]') {
+    console.log(selector);
     let containers;
     let selectorType;
     if (typeof selector === 'string') {

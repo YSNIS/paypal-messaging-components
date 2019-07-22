@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Messages Dev Sandbox</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <script src="https://localhost.paypal.com:8080/sdk.js?client-id=DEV00000000NI"></script>
+        <script
+            src="https://www.paypalobjects.com/upstream/bizcomponents/js/messaging.js"
+            data-pp-account="TMW5TEF2KZESG"
+        ></script>
     </head>
     <body>
         <div class="messages" data-pp-message></div>
         <script>
-            // paypal
-            //     .Messages({
-            //         style: {
-            //             layout: 'flex',
-            //             ratio: '8x1',
-            //             color: 'blue'
-            //         }
-            //     })
-            //     .render('.messages');
+            paypal
+                .Messages({
+                    account: 'TMW5TEF2KZESG',
+                    style: {
+                        layout: 'custom',
+                        markup: 'https://www.paypalobjects.com/upstream/assets/messaging/modal/TMW5TEF2KZESG-2.html'
+                    },
+                    sign:
+                        'stBWZe8ZZfLHPpAySFdg58UxE4WhhhXvAY/Lt2LfE/x5mx78iMCCB/kCXyiUiIFCKxV8V72vizvq5mCAsJmb2SIYvcipP/qcGtEdQ9iGU4872VIl+Lx2X21apcRapTUz8RzxEY2vNjU0y6RSsDUALUWbm39Z/CPtEC9FnEIrZ8YO+VQfduRs+3UxJblwVS7Hpwjn1lKSyjVCm8oKnuJm/ttQ9uw1bAUq/INpKApBOiTQlUKmlKpDgM7Bx1xCZGzowIDtxqqznMZu897XbUQp94NiE5ika84eWuO6VgwCkG+xCqpe7l5NYUIVBTEdWdwqXwtmu7QWYyzfhWzEhjtLECT9+/OTXvgpV50AtFWbxe2OrA6KaC0NyZ/bl7Mh+oFhCbXJx4ERxJp6w/DuxNNuKOLYraQgCWA4y5icwVyvda3DwRFqdw2cWimsKnHIXtU8Hc13yZU8Akxtf0/iwIHk7DY8VBJDLlDmxepokR6kVP4UeOWbBoCUVrbwoA9XKCxrBgbo2ocrUkBptrJTifs1M7lK90E+Fvrtxtmdx/nElRpsu9+Z88HUCX0VeHWO3a8JY51+GeD71cj+vHja1IvNDx3hGoshCLX2xaPqkZyJElnUX+T/8wHh0cEnyNw3y3PzaxyFByaVsk0y2uYW625hRj0gytYh7dXLCz8DvY5coIQ='
+                })
+                .render('.messages');
         </script>
     </body>
 </html>

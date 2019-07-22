@@ -55,6 +55,7 @@ const Banner = {
         if (wrapper !== container) wrapper.appendChild(container);
 
         function render(totalOptions) {
+            console.log(totalOptions);
             const options = validateOptions(totalOptions);
             const renderProm = getBannerMarkup(options) // Promise<Object( markup, options )>
                 .then(
